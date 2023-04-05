@@ -1,65 +1,3 @@
-# ✨ So you want to sponsor a contest
-
-This `README.md` contains a set of checklists for our contest collaboration.
-
-Your contest will use two repos: 
-- **a _contest_ repo** (this one), which is used for scoping your contest and for providing information to contestants (wardens)
-- **a _findings_ repo**, where issues are submitted (shared with you after the contest) 
-
-Ultimately, when we launch the contest, this contest repo will be made public and will contain the smart contracts to be reviewed and all the information needed for contest participants. The findings repo will be made public after the contest report is published and your team has mitigated the identified issues.
-
-Some of the checklists in this doc are for **C4 (🐺)** and some of them are for **you as the contest sponsor (⭐️)**.
-
----
-
-# Contest setup
-
-## 🐺 C4: Set up repos
-- [x] Create a new private repo named `YYYY-MM-sponsorname` using this repo as a template.
-- [x] Rename this repo to reflect contest date (if applicable)
-- [x] Rename contest H1 below
-- [x] Update pot sizes
-- [x] Fill in start and end times in contest bullets below
-- [x] Add link to submission form in contest details below
-- [ ] Add the information from the scoping form to the "Scoping Details" section at the bottom of this readme.
-- [ ] Add matching info to the [code423n4.com public contest data here](https://github.com/code-423n4/code423n4.com/blob/main/_data/contests/contests.csv))
-- [x] Add sponsor to this private repo with 'maintain' level access.
-- [x] Send the sponsor contact the url for this repo to follow the instructions below and add contracts here. 
-- [ ] Delete this checklist.
-
-# Repo setup
-
-## ⭐️ Sponsor: Add code to this repo
-
-- [ ] Create a PR to this repo with the below changes:
-- [ ] Provide a self-contained repository with working commands that will build (at least) all in-scope contracts, and commands that will run tests producing gas reports for the relevant contracts.
-- [ ] Make sure your code is thoroughly commented using the [NatSpec format](https://docs.soliditylang.org/en/v0.5.10/natspec-format.html#natspec-format).
-- [ ] Please have final versions of contracts and documentation added/updated in this repo **no less than 24 hours prior to contest start time.**
-- [ ] Be prepared for a 🚨code freeze🚨 for the duration of the contest — important because it establishes a level playing field. We want to ensure everyone's looking at the same code, no matter when they look during the contest. (Note: this includes your own repo, since a PR can leak alpha to our wardens!)
-
-
----
-
-## ⭐️ Sponsor: Edit this README
-
-Under "SPONSORS ADD INFO HERE" heading below, include the following:
-
-- [ ] Modify the bottom of this `README.md` file to describe how your code is supposed to work with links to any relevent documentation and any other criteria/details that the C4 Wardens should keep in mind when reviewing. ([Here's a well-constructed example.](https://github.com/code-423n4/2022-08-foundation#readme))
-  - [ ] When linking, please provide all links as full absolute links versus relative links
-  - [ ] All information should be provided in markdown format (HTML does not render on Code4rena.com)
-- [ ] Under the "Scope" heading, provide the name of each contract and:
-  - [ ] source lines of code (excluding blank lines and comments) in each
-  - [ ] external contracts called in each
-  - [ ] libraries used in each
-- [ ] Describe any novel or unique curve logic or mathematical models implemented in the contracts
-- [ ] Does the token conform to the ERC-20 standard? In what specific ways does it differ?
-- [ ] Describe anything else that adds any special logic that makes your approach unique
-- [ ] Identify any areas of specific concern in reviewing the code
-- [ ] Optional / nice to have: pre-record a high-level overview of your protocol (not just specific smart contract functions). This saves wardens a lot of time wading through documentation.
-- [ ] See also: [this checklist in Notion](https://code4rena.notion.site/Key-info-for-Code4rena-sponsors-f60764c4c4574bbf8e7a6dbd72cc49b4#0cafa01e6201462e9f78677a39e09746)
-- [ ] Delete this checklist and all text above the line below when you're ready.
-
----
 
 # Caviar Private Pools contest details
 - Total Prize Pool: $47,000 USDC
@@ -76,64 +14,97 @@ Under "SPONSORS ADD INFO HERE" heading below, include the following:
 - Starts April 07, 2023 20:00 UTC
 - Ends April 13, 2023 20:00 UTC 
 
-## Automated Findings / Publicly Known Issues
+# Caviar Private Pools
 
-Automated findings output for the contest can be found [here](add link to report) within an hour of contest opening.
+A private pool is a an NFT AMM controlled by a single owner. Each private pool is highly customizable with concentrated liquidity, custom fee rates, stolen NFT filtering, custom NFT weightings, royalty support, and flash loans. Liquidity providers deposit NFTs and ETH into these pools to enable trading. Docs are available [here](https://docs.caviar.sh/technical-reference/custom-pools). And a demo is available on [beta.goerli.caviar.sh](https://beta.goerli.caviar.sh/).
 
-*Note for C4 wardens: Anything included in the automated findings output is considered a publicly known issue and is ineligible for awards.*
+## Quickstart command
 
-[ ⭐️ SPONSORS ADD INFO HERE ]
+```
+rm -Rf 2023-04-caviar || true && git clone https://github.com/code-423n4/2023-04-caviar.git --recurse-submodules -j8 && cd 2023-04-caviar && yarn && foundryup && forge install && forge test --gas-report
+```
 
-# Overview
+## Getting started
 
-*Please provide some context about the code being audited, and identify any areas of specific concern in reviewing the code. (This is a good place to link to your docs, if you have them.)*
+```
+yarn
+forge install
+forge test --gas-report --ffi
+```
 
-# Scope
+## System overview
 
-*List all files in scope in the table below (along with hyperlinks) -- and feel free to add notes here to emphasize areas of focus.*
+- The [Factory](./src/Factory.sol) contract allows users to create and initialize new custom pools that are minimal proxies which point to a reference implementation. It is responsible for issuing NFTs that represent ownership of each custom pool. All protocol fees accrue to the factory contract and can be withdrawn by the protocol admin. Initially the protocol fee rate will be set to be 0% however it may be increased in the future, with advanced notice.
 
-*For line of code counts, we recommend using [cloc](https://github.com/AlDanial/cloc).* 
+- The [PrivatePool](./src/PrivatePool.sol) contract contains all of the core logic for custom pools. It allows users to set concentrated liquidity, custom fee rates, NFT weightings, change/flashloan fee rates, royalty fee support, and stolen NFT filtering. Traders can buy, sell, and change NFTs for other NFTs within the pool.
 
-| Contract | SLOC | Purpose | Libraries used |  
-| ----------- | ----------- | ----------- | ----------- |
-| [contracts/folder/sample.sol](contracts/folder/sample.sol) | 123 | This contract does XYZ | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+- The [EthRouter](./src/EthRouter.sol) contract is responsible for taking in a sequence of actions and executing them against the various pools. This is useful if a user wants to buy N amount of NFTs that belong to Y different pools. For example, Bob wants to buy token #1, #2, and #3. Token #1 belongs to pool A. Tokens #2, and #3 belong to pool B. Bob can submit an array of buys to the EthRouter and it will execute a buy from both pool A and pool B in one transaction. The EthRouter also interfaces with caviar public pools, which can be found [here](https://github.com/outdoteth/caviar).
 
-## Out of scope
+- The [PrivatePoolMetadata](./src/PrivatePoolMetadata.sol) contract is responsible for generating an on-chain svg and metadata representation of the NFT that represents ownership of a custom pool. This is used to display the NFT across various marketplaces and wallets.
 
-*List any files/contracts that are out of scope for this audit.*
+## Contracts overview
 
-# Additional Context
+| Contract                | LOC | Description                                         | Libraries                                                     |
+| ----------------------- | --- | --------------------------------------------------- | ------------------------------------------------------------- |
+| EthRouter.sol           | 177 | Routes trades to various pools                      | `solmate` `openzeppelin` `royalty-registry-solidity` `caviar` |
+| Factory.sol             | 83  | Creates new pools and also accrues protocol fees    | `solady` `solmate`                                            |
+| PrivatePool.sol         | 375 | Core AMM logic for each newly deployed private pool | `solady` `solmate` `openzeppelin` `royalty-registry-solidity` |
+| PrivatePoolMetadata.sol | 90  | Generates NFT metadata and svgs for each pool       | `solmate` `openzeppelin`                                      |
 
-*Describe any novel or unique curve logic or mathematical models implemented in the contracts*
+## External imports
 
-*Sponsor, please confirm/edit the information below.*
+- **solmate/tokens/ERC721.sol**
+  - [src/EthRouter.sol](./src/EthRouter.sol)
+  - [src/Factory.sol](./src/Factory.sol)
+  - [src/PrivatePool.sol](./src/PrivatePool.sol)
+- **solmate/utils/SafeTransferLib.sol**
+  - [src/EthRouter.sol](./src/EthRouter.sol)
+  - [src/Factory.sol](./src/Factory.sol)
+  - [src/PrivatePool.sol](./src/PrivatePool.sol)
+- **solmate/tokens/ERC20.sol**
+  - [src/Factory.sol](./src/Factory.sol)
+  - [src/PrivatePool.sol](./src/PrivatePool.sol)
+- **solmate/auth/Owned.sol**
+  - [src/Factory.sol](./src/Factory.sol)
+- **solmate/utils/FixedPointMathLib.sol**
+  - [src/PrivatePool.sol](./src/PrivatePool.sol)
+- **caviar/Pair.sol**
+  - [src/EthRouter.sol](./src/EthRouter.sol)
+- **royalty-registry-solidity/IRoyaltyRegistry.sol**
+  - [src/EthRouter.sol](./src/EthRouter.sol)
+  - [src/PrivatePool.sol](./src/PrivatePool.sol)
+- **solady/utils/LibClone.sol**
+  - [src/Factory.sol](./src/Factory.sol)
+- **solady/utils/MerkleProofLib.sol**
+  - [src/PrivatePool.sol](./src/PrivatePool.sol)
+- **openzeppelin/interfaces/IERC2981.sol**
+  - [src/PrivatePool.sol](./src/PrivatePool.sol)
+- **openzeppelin/interfaces/IERC3156FlashLender.sol**
+  - [src/PrivatePool.sol](./src/PrivatePool.sol)
+- **openzeppelin/interfaces/IERC2981.sol**
+  - [src/EthRouter.sol](./src/EthRouter.sol)
+
 
 ## Scoping Details 
 ```
 - If you have a public code repo, please share it here:  
-- How many contracts are in scope?:   
-- Total SLoC for these contracts?:  
-- How many external imports are there?:  
-- How many separate interfaces and struct definitions are there for the contracts within scope?:  
-- Does most of your code generally use composition or inheritance?:   
-- How many external calls?:   
-- What is the overall line coverage percentage provided by your tests?:  
-- Is there a need to understand a separate part of the codebase / get context in order to audit this part of the protocol?:   
-- Please describe required context:   
-- Does it use an oracle?:  
-- Does the token conform to the ERC20 standard?:  
-- Are there any novel or unique curve logic or mathematical models?: 
-- Does it use a timelock function?:  
-- Is it an NFT?: 
-- Does it have an AMM?:   
-- Is it a fork of a popular project?:   
-- Does it use rollups?:   
-- Is it multi-chain?:  
-- Does it use a side-chain?: 
+- How many contracts are in scope?:   4
+- Total SLoC for these contracts?:  725
+- How many external imports are there?:  12
+- How many separate interfaces and struct definitions are there for the contracts within scope?:  3
+- Does most of your code generally use composition or inheritance?:   inheritance
+- How many external calls?:   10
+- What is the overall line coverage percentage provided by your tests?:  N/a
+- Is there a need to understand a separate part of the codebase / get context in order to audit this part of the protocol?:   Caviar public pools: https://github.com/outdoteth/caviar
+- Please describe required context:   The EthRouter contract routes trades to caviar public pools (in addition to private pools)
+- Does it use an oracle?:  no
+- Does the token conform to the ERC20 standard?:  N/a
+- Are there any novel or unique curve logic or mathematical models?: no
+- Does it use a timelock function?:  no
+- Is it an NFT?: Yes
+- Does it have an AMM?:   Yes
+- Is it a fork of a popular project?:   No
+- Does it use rollups?:   No
+- Is it multi-chain?:  No
+- Does it use a side-chain?: No
 ```
-
-# Tests
-
-*Provide every step required to build the project from a fresh git clone, as well as steps to run the tests with a gas report.* 
-
-*Note: Many wardens run Slither as a first pass for testing.  Please document any known errors with no workaround.* 
