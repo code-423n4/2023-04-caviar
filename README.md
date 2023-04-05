@@ -61,7 +61,7 @@ Under "SPONSORS ADD INFO HERE" heading below, include the following:
 
 ---
 
-# Caviar contest details
+# Caviar Private Pools contest details
 - Total Prize Pool: $47,000 USDC
   - HM awards: $25,500 USDC 
   - QA report awards: $3,000 USDC 
