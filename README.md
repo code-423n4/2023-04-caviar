@@ -34,55 +34,64 @@ forge test --gas-report --ffi
 
 ## System overview
 
-- The [Factory](./src/Factory.sol) contract allows users to create and initialize new custom pools that are minimal proxies which point to a reference implementation. It is responsible for issuing NFTs that represent ownership of each custom pool. All protocol fees accrue to the factory contract and can be withdrawn by the protocol admin. Initially the protocol fee rate will be set to be 0% however it may be increased in the future, with advanced notice.
+- The [Factory](https://github.com/code-423n4/2023-04-caviar/blob/main/src/Factory.sol) contract allows users to create and initialize new custom pools that are minimal proxies which point to a reference implementation. It is responsible for issuing NFTs that represent ownership of each custom pool. All protocol fees accrue to the factory contract and can be withdrawn by the protocol admin. Initially the protocol fee rate will be set to be 0% however it may be increased in the future, with advanced notice.
 
-- The [PrivatePool](./src/PrivatePool.sol) contract contains all of the core logic for custom pools. It allows users to set concentrated liquidity, custom fee rates, NFT weightings, change/flashloan fee rates, royalty fee support, and stolen NFT filtering. Traders can buy, sell, and change NFTs for other NFTs within the pool.
+- The [PrivatePool](https://github.com/code-423n4/2023-04-caviar/blob/main/src/PrivatePool.sol) contract contains all of the core logic for custom pools. It allows users to set concentrated liquidity, custom fee rates, NFT weightings, change/flashloan fee rates, royalty fee support, and stolen NFT filtering. Traders can buy, sell, and change NFTs for other NFTs within the pool.
 
-- The [EthRouter](./src/EthRouter.sol) contract is responsible for taking in a sequence of actions and executing them against the various pools. This is useful if a user wants to buy N amount of NFTs that belong to Y different pools. For example, Bob wants to buy token #1, #2, and #3. Token #1 belongs to pool A. Tokens #2, and #3 belong to pool B. Bob can submit an array of buys to the EthRouter and it will execute a buy from both pool A and pool B in one transaction. The EthRouter also interfaces with caviar public pools, which can be found [here](https://github.com/outdoteth/caviar).
+- The [EthRouter](https://github.com/code-423n4/2023-04-caviar/blob/main/src/EthRouter.sol) contract is responsible for taking in a sequence of actions and executing them against the various pools. This is useful if a user wants to buy N amount of NFTs that belong to Y different pools. For example, Bob wants to buy token #1, #2, and #3. Token #1 belongs to pool A. Tokens #2, and #3 belong to pool B. Bob can submit an array of buys to the EthRouter and it will execute a buy from both pool A and pool B in one transaction. The EthRouter also interfaces with caviar public pools, which can be found [here](https://github.com/outdoteth/caviar).
 
-- The [PrivatePoolMetadata](./src/PrivatePoolMetadata.sol) contract is responsible for generating an on-chain svg and metadata representation of the NFT that represents ownership of a custom pool. This is used to display the NFT across various marketplaces and wallets.
+- The [PrivatePoolMetadata](https://github.com/code-423n4/2023-04-caviar/blob/main/src/PrivatePoolMetadata.sol) contract is responsible for generating an on-chain svg and metadata representation of the NFT that represents ownership of a custom pool. This is used to display the NFT across various marketplaces and wallets.
 
 ## Contracts overview
 
-| Contract                | LOC | Description                                         | Libraries                                                     |
-| ----------------------- | --- | --------------------------------------------------- | ------------------------------------------------------------- |
-| EthRouter.sol           | 177 | Routes trades to various pools                      | `solmate` `openzeppelin` `royalty-registry-solidity` `caviar` |
-| Factory.sol             | 83  | Creates new pools and also accrues protocol fees    | `solady` `solmate`                                            |
-| PrivatePool.sol         | 375 | Core AMM logic for each newly deployed private pool | `solady` `solmate` `openzeppelin` `royalty-registry-solidity` |
-| PrivatePoolMetadata.sol | 90  | Generates NFT metadata and svgs for each pool       | `solmate` `openzeppelin`                                      |
+| File                                                                                                                                                                                                                                                                                   |       [SLOC](#nowhere "(nSLOC, SLOC, Lines)")       | Description                                         | Libraries                                                              |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------: | :-------------------------------------------------- | :--------------------------------------------------------------------- |
+| _Contracts (4)_                                                                                                                                                                                                                                                                        |
+| [src/Factory.sol](https://github.com/code-423n4/2023-04-caviar/blob/main/src/Factory.sol) [💰](#nowhere "Payable Functions") [📤](#nowhere "Initiates ETH Value Transfer")                                                                                                             |   [82](#nowhere "(nSLOC:69, SLOC:82, Lines:171)")   | Creates new pools and also accrues protocol fees    | `solady/*` `solmate/*`                                                 |
+| [src/PrivatePoolMetadata.sol](https://github.com/code-423n4/2023-04-caviar/blob/main/src/PrivatePoolMetadata.sol)                                                                                                                                                                      |   [90](#nowhere "(nSLOC:90, SLOC:90, Lines:120)")   | Generates NFT metadata and svgs for each pool       | `@openzeppelin/*` `solmate/*`                                          |
+| [src/EthRouter.sol](https://github.com/code-423n4/2023-04-caviar/blob/main/src/EthRouter.sol) [💰](#nowhere "Payable Functions")                                                                                                                                                       | [179](#nowhere "(nSLOC:168, SLOC:179, Lines:317)")  | Routes trades to various pools                      | `solmate/*` `@openzeppelin/*` `caviar/*` `royalty-registry-solidity/*` |
+| [src/PrivatePool.sol](https://github.com/code-423n4/2023-04-caviar/blob/main/src/PrivatePool.sol) [🖥](#nowhere "Uses Assembly") [💰](#nowhere "Payable Functions") [📤](#nowhere "Initiates ETH Value Transfer") [🧮](#nowhere "Uses Hash-Functions") [♻️](#nowhere "TryCatch Blocks") | [379](#nowhere "(nSLOC:325, SLOC:379, Lines:794)")  | Core AMM logic for each newly deployed private pool | `solmate/*` `solady/*` `@openzeppelin/*` `royalty-registry-solidity/*` |
+| _Interfaces (1)_                                                                                                                                                                                                                                                                       |
+| [src/interfaces/IStolenNftOracle.sol](https://github.com/code-423n4/2023-04-caviar/blob/main/src/interfaces/IStolenNftOracle.sol)                                                                                                                                                      |   [11](#nowhere "(nSLOC:10, SLOC:11, Lines:22)")    |                                                     |                                                                        |
+| Total (over 5 files):                                                                                                                                                                                                                                                                  | [741](#nowhere "(nSLOC:662, SLOC:741, Lines:1424)") |                                                     |                                                                        |
 
 ## External imports
 
-- **solmate/tokens/ERC721.sol**
-  - [src/EthRouter.sol](./src/EthRouter.sol)
-  - [src/Factory.sol](./src/Factory.sol)
-  - [src/PrivatePool.sol](./src/PrivatePool.sol)
-- **solmate/utils/SafeTransferLib.sol**
-  - [src/EthRouter.sol](./src/EthRouter.sol)
-  - [src/Factory.sol](./src/Factory.sol)
-  - [src/PrivatePool.sol](./src/PrivatePool.sol)
-- **solmate/tokens/ERC20.sol**
-  - [src/Factory.sol](./src/Factory.sol)
-  - [src/PrivatePool.sol](./src/PrivatePool.sol)
-- **solmate/auth/Owned.sol**
-  - [src/Factory.sol](./src/Factory.sol)
-- **solmate/utils/FixedPointMathLib.sol**
-  - [src/PrivatePool.sol](./src/PrivatePool.sol)
 - **caviar/Pair.sol**
-  - [src/EthRouter.sol](./src/EthRouter.sol)
-- **royalty-registry-solidity/IRoyaltyRegistry.sol**
-  - [src/EthRouter.sol](./src/EthRouter.sol)
-  - [src/PrivatePool.sol](./src/PrivatePool.sol)
-- **solady/utils/LibClone.sol**
-  - [src/Factory.sol](./src/Factory.sol)
-- **solady/utils/MerkleProofLib.sol**
-  - [src/PrivatePool.sol](./src/PrivatePool.sol)
+  - [src/EthRouter.sol](https://github.com/code-423n4/2023-04-caviar/blob/main/src/EthRouter.sol)
 - **openzeppelin/interfaces/IERC2981.sol**
-  - [src/PrivatePool.sol](./src/PrivatePool.sol)
+  - [src/EthRouter.sol](https://github.com/code-423n4/2023-04-caviar/blob/main/src/EthRouter.sol)
+  - [src/PrivatePool.sol](https://github.com/code-423n4/2023-04-caviar/blob/main/src/PrivatePool.sol)
 - **openzeppelin/interfaces/IERC3156FlashLender.sol**
-  - [src/PrivatePool.sol](./src/PrivatePool.sol)
-- **openzeppelin/interfaces/IERC2981.sol**
-  - [src/EthRouter.sol](./src/EthRouter.sol)
+  - [src/PrivatePool.sol](https://github.com/code-423n4/2023-04-caviar/blob/main/src/PrivatePool.sol)
+- **openzeppelin/utils/Base64.sol**
+  - [src/PrivatePoolMetadata.sol](https://github.com/code-423n4/2023-04-caviar/blob/main/src/PrivatePoolMetadata.sol)
+- **openzeppelin/utils/Strings.sol**
+  - [src/PrivatePoolMetadata.sol](https://github.com/code-423n4/2023-04-caviar/blob/main/src/PrivatePoolMetadata.sol)
+- **royalty-registry-solidity/IRoyaltyRegistry.sol**
+  - [src/EthRouter.sol](https://github.com/code-423n4/2023-04-caviar/blob/main/src/EthRouter.sol)
+  - [src/PrivatePool.sol](https://github.com/code-423n4/2023-04-caviar/blob/main/src/PrivatePool.sol)
+- **solady/utils/LibClone.sol**
+  - [src/Factory.sol](https://github.com/code-423n4/2023-04-caviar/blob/main/src/Factory.sol)
+- **solady/utils/MerkleProofLib.sol**
+  - [src/PrivatePool.sol](https://github.com/code-423n4/2023-04-caviar/blob/main/src/PrivatePool.sol)
+- **solmate/auth/Owned.sol**
+  - [src/Factory.sol](https://github.com/code-423n4/2023-04-caviar/blob/main/src/Factory.sol)
+- **solmate/tokens/ERC20.sol**
+  - [src/Factory.sol](https://github.com/code-423n4/2023-04-caviar/blob/main/src/Factory.sol)
+  - [src/PrivatePool.sol](https://github.com/code-423n4/2023-04-caviar/blob/main/src/PrivatePool.sol)
+  - [src/PrivatePoolMetadata.sol](https://github.com/code-423n4/2023-04-caviar/blob/main/src/PrivatePoolMetadata.sol)
+- **solmate/tokens/ERC721.sol**
+  - [src/EthRouter.sol](https://github.com/code-423n4/2023-04-caviar/blob/main/src/EthRouter.sol)
+  - [src/Factory.sol](https://github.com/code-423n4/2023-04-caviar/blob/main/src/Factory.sol)
+  - [src/PrivatePool.sol](https://github.com/code-423n4/2023-04-caviar/blob/main/src/PrivatePool.sol)
+  - [src/PrivatePoolMetadata.sol](https://github.com/code-423n4/2023-04-caviar/blob/main/src/PrivatePoolMetadata.sol)
+- **solmate/utils/FixedPointMathLib.sol**
+  - [src/PrivatePool.sol](https://github.com/code-423n4/2023-04-caviar/blob/main/src/PrivatePool.sol)
+- **solmate/utils/SafeTransferLib.sol**
+  - [src/EthRouter.sol](https://github.com/code-423n4/2023-04-caviar/blob/main/src/EthRouter.sol)
+  - [src/Factory.sol](https://github.com/code-423n4/2023-04-caviar/blob/main/src/Factory.sol)
+  - [src/PrivatePool.sol](https://github.com/code-423n4/2023-04-caviar/blob/main/src/PrivatePool.sol)
 
 ## Scoping Details
 
