@@ -1,6 +1,28 @@
+# Caviar Private Pools contest details
+
+- Total Prize Pool: \$47,000 USDC
+  - HM awards: \$25,500 USDC
+  - QA report awards: \$3,000 USDC
+  - Gas report awards: \$1,500 USDC
+  - Judge awards: \$6,000 USDC
+  - Lookout awards: \$2400 USDC
+  - Scout awards: \$500 USDC
+  - Mitigation review contest: \$8,100 USDC (_Opportunity goes to top 5 certified wardens based on placement in this contest._)
+- Join [C4 Discord](https://discord.gg/code4rena) to register
+- Submit findings [using the C4 form](https://code4rena.com/contests/2023-04-caviar-contest/submit)
+- [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
+- Starts April 07, 2023 20:00 UTC
+- Ends April 13, 2023 20:00 UTC
+
 # Caviar Private Pools
 
 A private pool is a an NFT AMM controlled by a single owner. Each private pool is highly customizable with concentrated liquidity, custom fee rates, stolen NFT filtering, custom NFT weightings, royalty support, and flash loans. Liquidity providers deposit NFTs and ETH into these pools to enable trading. Docs are available [here](https://docs.caviar.sh/technical-reference/custom-pools). And a demo is available on [beta.goerli.caviar.sh](https://beta.goerli.caviar.sh/).
+
+## Quickstart command
+
+```
+rm -Rf 2023-04-caviar || true && git clone https://github.com/code-423n4/2023-04-caviar.git --recurse-submodules -j8 && cd 2023-04-caviar && yarn && foundryup && forge install && forge test --gas-report
+```
 
 ## Getting started
 
@@ -61,3 +83,28 @@ forge test --gas-report --ffi
   - [src/PrivatePool.sol](./src/PrivatePool.sol)
 - **openzeppelin/interfaces/IERC2981.sol**
   - [src/EthRouter.sol](./src/EthRouter.sol)
+
+## Scoping Details
+
+```
+- If you have a public code repo, please share it here:
+- How many contracts are in scope?:   4
+- Total SLoC for these contracts?:  725
+- How many external imports are there?:  12
+- How many separate interfaces and struct definitions are there for the contracts within scope?:  3
+- Does most of your code generally use composition or inheritance?:   inheritance
+- How many external calls?:   10
+- What is the overall line coverage percentage provided by your tests?:  N/a
+- Is there a need to understand a separate part of the codebase / get context in order to audit this part of the protocol?:   Caviar public pools: https://github.com/outdoteth/caviar
+- Please describe required context:   The EthRouter contract routes trades to caviar public pools (in addition to private pools)
+- Does it use an oracle?:  no
+- Does the token conform to the ERC20 standard?:  N/a
+- Are there any novel or unique curve logic or mathematical models?: no
+- Does it use a timelock function?:  no
+- Is it an NFT?: Yes
+- Does it have an AMM?:   Yes
+- Is it a fork of a popular project?:   No
+- Does it use rollups?:   No
+- Is it multi-chain?:  No
+- Does it use a side-chain?: No
+```
