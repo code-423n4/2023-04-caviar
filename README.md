@@ -21,7 +21,7 @@ A private pool is a an NFT AMM controlled by a single owner. Each private pool i
 ## Quickstart command
 
 ```
-rm -Rf 2023-04-caviar || true && git clone https://github.com/code-423n4/2023-04-caviar.git --recurse-submodules -j8 && cd 2023-04-caviar && yarn && foundryup && forge install && forge test --gas-report
+rm -Rf 2023-04-caviar || true && git clone https://github.com/code-423n4/2023-04-caviar.git --recurse-submodules -j8 && cd 2023-04-caviar && yarn && foundryup && forge install && forge test --ffi --gas-report
 ```
 
 ## Getting started
@@ -108,3 +108,7 @@ forge test --gas-report --ffi
 - Is it multi-chain?:  No
 - Does it use a side-chain?: No
 ```
+
+## Known issues
+
+- There is a bug related to slither that prevents it from running correctly. More info can be found here: https://github.com/crytic/slither/issues/1737
