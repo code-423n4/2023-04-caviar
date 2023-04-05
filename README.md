@@ -121,3 +121,5 @@ forge test --gas-report --ffi
 ## Known issues
 
 - There is a bug related to slither that prevents it from running correctly. More info can be found here: https://github.com/crytic/slither/issues/1737
+
+- There is a bug related to generating coverage reports with forge. More info can be found here: https://github.com/foundry-rs/foundry/issues/3357
