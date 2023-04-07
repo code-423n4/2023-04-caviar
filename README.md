@@ -14,6 +14,13 @@
 - Starts April 07, 2023 20:00 UTC
 - Ends April 13, 2023 20:00 UTC
 
+## Automated Findings / Publicly Known Issues 
+
+Automated findings output for the contest can be found [here](https://gist.github.com/Picodes/f50f08a90e93acff6c069898839a7452) within an hour of contest opening.
+
+*Note for C4 wardens: Anything included in the automated findings output is considered a publicly known issue and is ineligible for awards.*
+
+
 # Caviar Private Pools
 
 A private pool is a an NFT AMM controlled by a single owner. Each private pool is highly customizable with concentrated liquidity, custom fee rates, stolen NFT filtering, custom NFT weightings, royalty support, and flash loans. Liquidity providers deposit NFTs and ETH into these pools to enable trading. Docs are available [here](https://docs.caviar.sh/technical-reference/custom-pools). And a demo is available on [beta.goerli.caviar.sh](https://beta.goerli.caviar.sh/).
