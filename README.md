@@ -9,7 +9,7 @@
   - Scout awards: \$500 USDC
   - Mitigation review contest: \$8,100 USDC (_Opportunity goes to top 5 certified wardens based on placement in this contest._)
 - Join [C4 Discord](https://discord.gg/code4rena) to register
-- Submit findings [using the C4 form](https://code4rena.com/contests/2023-04-caviar-private-pools-contest/submit)
+- Submit findings [using the C4 form](https://code4rena.com/contests/2023-04-caviar-private-pools/submit)
 - [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
 - Starts April 07, 2023 20:00 UTC
 - Ends April 13, 2023 20:00 UTC
