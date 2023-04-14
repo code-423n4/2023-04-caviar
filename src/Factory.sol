@@ -38,7 +38,11 @@ contract Factory is ERC721, Owned {
     using LibClone for address;
     using SafeTransferLib for address;
 
-    event Create(address indexed privatePool, uint256[] tokenIds, uint256 baseTokenAmount);
+    event Create(
+        address indexed privatePool,
+        uint256[] tokenIds,
+        uint256 baseTokenAmount
+    );
     event Withdraw(address indexed token, uint256 indexed amount);
 
     /// @notice The address of the private pool implementation that proxies point to.
@@ -81,15 +85,20 @@ contract Factory is ERC721, Owned {
         bytes32 _salt,
         uint256[] memory tokenIds, // put in memory to avoid stack too deep error
         uint256 baseTokenAmount
-    ) public payable returns (PrivatePool privatePool) {
+    ) external payable returns (PrivatePool privatePool) {
         // check that the msg.value is equal to the base token amount if the base token is ETH or the msg.value is equal
         // to zero if the base token is not ETH
-        if ((_baseToken == address(0) && msg.value != baseTokenAmount) || (_baseToken != address(0) && msg.value > 0)) {
+        if (
+            (_baseToken == address(0) && msg.value != baseTokenAmount) ||
+            (_baseToken != address(0) && msg.value > 0)
+        ) {
             revert PrivatePool.InvalidEthAmount();
         }
 
         // deploy a minimal proxy clone of the private pool implementation
-        privatePool = PrivatePool(payable(privatePoolImplementation.cloneDeterministic(_salt)));
+        privatePool = PrivatePool(
+            payable(privatePoolImplementation.cloneDeterministic(_salt))
+        );
 
         // mint the nft to the caller
         _safeMint(msg.sender, uint256(uint160(address(privatePool))));
@@ -112,12 +121,20 @@ contract Factory is ERC721, Owned {
             address(privatePool).safeTransferETH(baseTokenAmount);
         } else {
             // deposit the base tokens from the caller into the pool
-            ERC20(_baseToken).transferFrom(msg.sender, address(privatePool), baseTokenAmount);
+            ERC20(_baseToken).transferFrom(
+                msg.sender,
+                address(privatePool),
+                baseTokenAmount
+            );
         }
 
         // deposit the nfts from the caller into the pool
         for (uint256 i = 0; i < tokenIds.length; i++) {
-            ERC721(_nft).safeTransferFrom(msg.sender, address(privatePool), tokenIds[i]);
+            ERC721(_nft).safeTransferFrom(
+                msg.sender,
+                address(privatePool),
+                tokenIds[i]
+            );
         }
 
         // emit create event
@@ -126,13 +143,17 @@ contract Factory is ERC721, Owned {
 
     /// @notice Sets private pool metadata contract.
     /// @param _privatePoolMetadata The private pool metadata contract.
-    function setPrivatePoolMetadata(address _privatePoolMetadata) public onlyOwner {
+    function setPrivatePoolMetadata(
+        address _privatePoolMetadata
+    ) public onlyOwner {
         privatePoolMetadata = _privatePoolMetadata;
     }
 
     /// @notice Sets the private pool implementation contract that newly deployed proxies point to.
     /// @param _privatePoolImplementation The private pool implementation contract.
-    function setPrivatePoolImplementation(address _privatePoolImplementation) public onlyOwner {
+    function setPrivatePoolImplementation(
+        address _privatePoolImplementation
+    ) public onlyOwner {
         privatePoolImplementation = _privatePoolImplementation;
     }
 
@@ -145,7 +166,7 @@ contract Factory is ERC721, Owned {
     /// @notice Withdraws the earned protocol fees.
     /// @param token The token to withdraw.
     /// @param amount The amount to withdraw.
-    function withdraw(address token, uint256 amount) public onlyOwner {
+    function withdraw(address token, uint256 amount) external onlyOwner {
         if (token == address(0)) {
             msg.sender.safeTransferETH(amount);
         } else {
@@ -165,7 +186,10 @@ contract Factory is ERC721, Owned {
     /// @notice Predicts the deployment address of a new private pool.
     /// @param salt The salt that will used on deployment.
     /// @return predictedAddress The predicted deployment address of the private pool.
-    function predictPoolDeploymentAddress(bytes32 salt) public view returns (address predictedAddress) {
-        predictedAddress = privatePoolImplementation.predictDeterministicAddress(salt, address(this));
+    function predictPoolDeploymentAddress(
+        bytes32 salt
+    ) public view returns (address predictedAddress) {
+        predictedAddress = privatePoolImplementation
+            .predictDeterministicAddress(salt, address(this));
     }
 }
