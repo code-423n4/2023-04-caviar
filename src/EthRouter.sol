@@ -33,7 +33,6 @@ import {SafeTransferLib} from "solmate/utils/SafeTransferLib.sol";
 import {IERC2981} from "openzeppelin/interfaces/IERC2981.sol";
 import {Pair, ReservoirOracle} from "caviar/Pair.sol";
 import {IRoyaltyRegistry} from "royalty-registry-solidity/IRoyaltyRegistry.sol";
-
 import {PrivatePool} from "./PrivatePool.sol";
 import {IStolenNftOracle} from "./interfaces/IStolenNftOracle.sol";
 

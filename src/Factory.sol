@@ -25,7 +25,6 @@ import {ERC20} from "solmate/tokens/ERC20.sol";
 import {ERC721} from "solmate/tokens/ERC721.sol";
 import {Owned} from "solmate/auth/Owned.sol";
 import {SafeTransferLib} from "solmate/utils/SafeTransferLib.sol";
-
 import {PrivatePool} from "./PrivatePool.sol";
 import {PrivatePoolMetadata} from "./PrivatePoolMetadata.sol";
 
