@@ -1,0 +1,1741 @@
+==============================================================
+Guild: Code4rena
+Channel: ARCHIVE-Q2-2023 / caviar-apr07
+==============================================================
+
+[04/06/2023 17:16] kartoonjoy (pinned)
+👋 Hello and welcome to the contest channel for the **$47,000 USDC Caviar Private Pools** contest!
+
+📆 Contest opens 04/07/2023 20:00 (20:00 UTC) and runs through 04/13/2023 20:00 (20:00 UTC) (6 days).
+
+Please give a warm welcome to the Caviar team, particularly @out.eth, who will be available for questions either here in the channel or via DM (**GMT+9** timezone(s)).
+
+We'll be posting relevant links, documentation, etc. here, so if you intend to participate in this contest, consider enabling notifications for this channel. 🐺 ⏰
+
+Contest Page: https://code4rena.com/contests/2023-04-caviar-private-pools
+
+{Embed}
+https://code4rena.com/contests/2023-04-caviar-private-pools
+Code4rena Caviar Private Pools
+$47,000 USDC
+7 April 2023—13 April 2023
+Code4rena - ARCHIVE-Q2-2023 - caviar-apr07 [1093579563424030832].txt_Files/c4-og-banner-0FCFA.png
+
+
+[04/06/2023 17:17] kartoonjoy
+Pinned a message.
+
+
+[04/06/2023 17:17] kartoonjoy
+Hi 👋! Let's please limit conversation until the contest begins. Thanks!
+
+
+[04/06/2023 17:41] out.eth
+Hi everyone!
+
+{Reactions}
+👋 (39) praisethesun (4) cheers_badger (3) astrobadger (3) gigachad (5) dance_vibe (2) 
+
+[04/06/2023 23:00] 0xmichalis
+1g
+
+{Reactions}
+😄 
+
+[04/07/2023 01:39] 0xjuntao
+is it public contest?
+
+{Reactions}
+🤐 
+
+[04/07/2023 04:01] _0xfanz
+if you see here it is public 😂
+
+{Reactions}
+😂 (3) ☝️ (2) 💜 
+
+[04/07/2023 05:39] nameruse#6452
+Its a public contest about private pools using a public repository
+
+{Reactions}
+😂 (14) 
+
+[04/07/2023 11:50] kartoonjoy
+Hi 👋! Let's please limit conversation until the contest begins. Thanks!
+
+{Reactions}
+🙏 (3) ✅ 
+
+[04/07/2023 16:15] carlitox477
+Hi!!! Let's see if I repeat 4 figures 😄
+
+{Reactions}
+🚀 (3) 
+
+[04/07/2023 16:16] kartoonjoy
+Hi 👋! Let's please limit conversation until the contest begins. Thanks!
+
+{Reactions}
+👍 (5) 
+
+[04/07/2023 20:07] chaindev
+`broadcast/Deploy.s.sol/5` is necessary?
+
+
+[04/07/2023 20:51] thepicodes (pinned)
+**Automated Findings: **https://gist.github.com/Picodes/f50f08a90e93acff6c069898839a7452
+
+{Reactions}
+👍 (2) 
+
+[04/07/2023 20:52] kartoonjoy (pinned)
+Wardens, please note that the automated findings output is posted below. These are considered publicly known issues and are not eligible for awards.
+
+**Automated findings:**
+https://gist.github.com/Picodes/f50f08a90e93acff6c069898839a7452
+
+**Code4rena submission guidelines and automated findings policy: **https://docs.code4rena.com/roles/wardens/submission-policy#automated-findings-ineligible
+
+This will also be linked in the contest README file shortly.
+
+
+[04/07/2023 20:53] kartoonjoy
+Pinned a message.
+
+
+[04/07/2023 20:53] kartoonjoy
+Pinned a message.
+
+
+[04/07/2023 21:14] dingo2077
+Seems in one year automatic finder will be top warden, 2 mediums at start🙃
+
+
+[04/07/2023 21:46] 0xstalin
+or maybe those mediums will eventually be lowered to Low severities?
+
+{Reactions}
+☝️ (2) 
+
+[04/07/2023 22:11] mariodev__
+crap, sorry for this guys, I submited the unsafe ERC20 operations... didn't read through the whole automated findings.
+
+
+[04/07/2023 22:12] mariodev__
+first timer here hehe
+
+
+[04/07/2023 22:29] kartoonjoy
+You can edit your findings.
+
+
+[04/07/2023 22:45] _oceansky
+welcome back Caviar!
+
+{Reactions}
+😄 
+
+[04/07/2023 22:56] out.eth
+just the deploy logs, not necessary
+
+
+[04/07/2023 23:12] burraq101325
+Which tool is used to identify the automated findings?
+
+
+[04/08/2023 02:47] kiki_dev
+Love the ascii art btw
+
+
+[04/08/2023 03:26] bytes032
+both of these will be submitted by dozen of wardens and will cost nothing anyway
+
+
+[04/08/2023 03:41] 0xnirlin
+true, just other day got a high with 50 duplicates.
+
+{Reactions}
+😢 (5) 
+
+[04/08/2023 04:44] 0xnirlin
+have this implementaion been audited before?
+
+
+[04/08/2023 06:45] 0x3b
+with that high will you be able to register as an certified warden? I think you need 1 high or 3 med
+
+
+[04/08/2023 06:49] 0xnirlin
+that was on sherlock
+
+
+[04/08/2023 06:52] 0x3b
+ahhhhh
+
+
+[04/08/2023 06:52] 0x3b
+too bad
+
+
+[04/08/2023 07:45] ivok1#4124
+@out.eth 
+sent u a DM
+
+
+[04/08/2023 08:07] mariodev__
+ok done, ty didn't know that
+
+
+[04/08/2023 08:13] t.nero
+Are these test cases expecting revert?
+
+{Attachments}
+Code4rena - ARCHIVE-Q2-2023 - caviar-apr07 [1093579563424030832].txt_Files/image-7E86C.png
+
+
+[04/08/2023 08:17] t.nero
+Just cloned the repo, installed every dependencies, then ran `forge test` and found this. I mean, this is expected or not. Wanna make sure I setup correctly.
+
+
+[04/08/2023 08:18] mariodev__
+I guess not, if they were expected reverts, that should be stated in the actual test therefore making it a passing test
+
+
+[04/08/2023 08:18] mariodev__
+but idk
+
+
+[04/08/2023 08:18] mariodev__
+devs will tell
+
+
+[04/08/2023 08:25] t.nero
+Figured that out. Some corrupted files, I guess. Just remove and clone a new one, everything is working now. 😅
+
+{Reactions}
+👍 
+
+[04/08/2023 08:26] dingo2077
+this repo could be changed after start?
+
+
+[04/08/2023 08:29] t.nero
+I think not. I first cloned it 20 mins ago, the one that I had been having a problem.
+
+{Reactions}
+👍 
+
+[04/08/2023 13:13] out.eth
+All tests should pass
+
+
+[04/08/2023 13:21] out.eth (pinned)
+Hi guys, since quite a few people have asked me in DMs I’m posting in here. The StolenNftOracle that is used is the contract that is defined here: https://github.com/outdoteth/caviar/blob/main/src/StolenNftFilterOracle.sol
+
+{Embed}
+https://github.com/outdoteth/caviar/blob/main/src/StolenNftFilterOracle.sol
+caviar/StolenNftFilterOracle.sol at main · outdoteth/caviar
+nft AMM with desirability-ranked subpools using the xyk invariant - caviar/StolenNftFilterOracle.sol at main · outdoteth/caviar
+Code4rena - ARCHIVE-Q2-2023 - caviar-apr07 [1093579563424030832].txt_Files/caviar-BC6FA
+
+{Reactions}
+👍 (2) 
+
+[04/08/2023 13:21] kartoonjoy
+Pinned a message.
+
+
+[04/08/2023 13:38] lewisbroadhurst
+The ASCII art at the top of the contracts are WAGMI / 10! 😁
+
+{Reactions}
+👍 
+
+[04/08/2023 13:52] 0xepley
+has cavier been audited before?
+
+
+[04/08/2023 13:55] devdacian
+https://code4rena.com/contests/2022-12-caviar-contest
+
+{Embed}
+https://code4rena.com/contests/2022-12-caviar-contest
+Code4rena Caviar contest
+$36,500 USDC
+12 December 2022—19 December 2022
+Code4rena - ARCHIVE-Q2-2023 - caviar-apr07 [1093579563424030832].txt_Files/c4-og-banner-0FCFA.png
+
+{Reactions}
+🧐 
+
+[04/08/2023 14:05] escrow1337
+i had this same issue initially, use the quickstart command
+
+{Reactions}
+👌 
+
+[04/08/2023 14:27] 0xmichalis
+@out.eth I see that anyone can deposit in the pool but only the owner can withdraw, is there any reason that deposits are permissionless?
+
+
+[04/08/2023 15:51] t.nero
+I think because it is an AMM, like Uniswap, anyone can create a new token pair when there is not existent one. The owner is able to withdraw only the protocol collected fee, not the user deposited fund.
+
+
+[04/08/2023 15:53] t.nero
+Maybe I’m wrong at some point, I’m still understanding the protocol as well.
+
+{Reactions}
+💫 
+
+[04/08/2023 15:53] 0xmichalis
+the owner is able to withdraw all tokens from their private pool
+
+
+[04/08/2023 15:57] t.nero
+Oh sorry, I see. We are referring to the different “owner”, I believe you meant the fund owner, but I referred to the protocol owner 😅.
+
+
+[04/08/2023 15:59] 0xmichalis
+yeap, in this case it's the owner of the private pool
+
+
+[04/09/2023 00:33] climber2002#7916
+What's the purpose of `PrivatePool.deposit`? The depositor doesn't get any benefits, and also he can't withdraw what he deposited.
+
+
+[04/09/2023 00:38] out.eth
+There may be use cases where people want to create additional wrapper contracts around private pools that deposit into them. In which case, limiting to just one deposit address (the owner) is quite constraining.
+
+{Reactions}
+👍 (2) 
+
+[04/09/2023 10:01] t.nero
+@out.eth Can you elaborate on `virtualNftReserves` and `virtualBaseTokenReserves` a little more? Like how it be calculated from the front-end when creating a pool. I have played the demo site, there are 2 range sliders, one is the price in ETH and another one is the NFT amount. How that reflect to these variables?
+
+
+[04/09/2023 10:36] out.eth (pinned)
+The calculation in the frontend to match the price range a user defines uses a decent amount of math that imo is out of scope - if you would really find it interesting I can post it in here. But I think a high level intuition serves to explain more clearly:
+
+1. A user selects a price range at which they want to deposit liquidity in the UI
+2. They select some NFTs and some ETH that they want to deposit, and also define an initial price
+3. we want to find a `virtualNftReserves` and `virtualBaseTokenReserves` that:
+  a) has the initial price that the user defined
+  b) will reach the top of the price range if all the NFTs are bought from the pool
+  c) will reach the bottom of the price range if all the ETH is used to buy NFTs that are sold into the pool
+
+
+[04/09/2023 10:50] t.nero
+Great, thanks.
+1 more question: By the term "top" and "bottom" of the price range, does it mean either `virtualNftReserves = 0` or `virtualBaseTokenReserves = 0`?
+
+
+[04/09/2023 10:52] out.eth
+The top of the price range's value is when there are 0 NFTs in the contract, the value of virtualBaseTokenReserves / virtualNftReserves
+The bottom of the price range's value is when there is 0 ETH left in the contract, the value of virtualBaseTokenReserves / virtualNftReserves
+
+{Reactions}
+🙌 (2) 
+
+[04/09/2023 10:54] t.nero
+Thank you.
+
+
+[04/09/2023 11:53] devabdee
+What is the overall test coverage around?
+
+
+[04/09/2023 11:54] dingo2077
+@out.eth dmed u
+
+
+[04/09/2023 12:36] bason91
+@out.eth, 
+I have a questions related to this code: 
+```if ((_baseToken == address(0) && msg.value != baseTokenAmount) || (_baseToken != address(0) && msg.value > 0)) {
+            revert PrivatePool.InvalidEthAmount();
+        }
+```
+Why are we reverting if the base token is different from address 0 and we are receiving some eth?
+
+
+[04/09/2023 13:32] t.nero
+Because an ERC20 is expected not ETH, and the caller attach ETH during the call for no reason.
+
+{Reactions}
+👍 (2) 
+
+[04/09/2023 14:17] bason91
+@Kenshin , @out.eth , and what is the virtual base token reserve used for? Thanks!
+
+
+[04/09/2023 14:18] elku.cryptos
+Where can i see the implementation for `stolenNftOracle`? @out.eth
+
+
+[04/09/2023 14:19] 0xweiss
+https://github.com/outdoteth/caviar/blob/main/src/StolenNftFilterOracle.sol
+
+{Embed}
+https://github.com/outdoteth/caviar/blob/main/src/StolenNftFilterOracle.sol
+caviar/StolenNftFilterOracle.sol at main · outdoteth/caviar
+nft AMM with desirability-ranked subpools using the xyk invariant - caviar/StolenNftFilterOracle.sol at main · outdoteth/caviar
+Code4rena - ARCHIVE-Q2-2023 - caviar-apr07 [1093579563424030832].txt_Files/caviar-BC6FA
+
+{Reactions}
+🙏 
+
+[04/09/2023 14:27] t.nero
+From my understanding, it is mainly used to calculate buying and selling NFT price. Higher means expensive, lower means cheap.
+
+
+[04/09/2023 14:51] indijanc7
+@out.eth why does the withdraw function allow for arbitrary nft and token withdrawals instead of the nft and baseToken that was set-up during PrivatePool initialization? Is this again to allow for retrieval of airdrops?
+
+
+[04/09/2023 14:53] elku.cryptos
+I guess everything in the pool belongs to the pool creator. to create some liquidity, owner transfer some tokens to the pool. and then other users buy and sell using it. so technically whatever is there, belongs to the owner of the pool.
+
+{Reactions}
+👍 (3) 
+
+[04/09/2023 15:27] shealtielanz
+I got a headache from trying to understand 💨 the privatepool.sol
+
+
+[04/09/2023 15:30] bason91
+Welcome to the club!
+
+{Reactions}
+😂 (4) 
+
+[04/09/2023 15:38] _0xfanz
+take it slowly step by step 😂
+
+
+[04/09/2023 19:18] out.eth
+It’s used to calculate the price and slippage using the xy=k invariant.
+
+
+[04/09/2023 19:19] out.eth
+All assets in the pool belong to the owner, so they should be able to withdraw anything sent to the pool.
+
+
+[04/09/2023 19:20] out.eth
+Please feel free to ask any questions in here or DM me 😄
+
+
+[04/10/2023 00:30] B.marouen#0502
+@out.eth  i DMed you
+
+{Reactions}
+👍 
+
+[04/10/2023 05:17] t.nero
+https://tenor.com/view/im-lost-formula-confused-calculate-gif-9919713
+
+{Embed}
+https://tenor.com/view/im-lost-formula-confused-calculate-gif-9919713
+Code4rena - ARCHIVE-Q2-2023 - caviar-apr07 [1093579563424030832].txt_Files/im-lost-formula-3CEBA.png
+
+{Reactions}
+😅 
+
+[04/10/2023 07:25] mariodev__
+hahaha yeah. I gave it to gpt to see how it would explain it to me, and it helped a bit. But it is always better to DM devs and see if they can give you some guidance
+
+
+[04/10/2023 08:45] nobody2018
+@out.eth i DMed you
+
+{Reactions}
+👍 
+
+[04/10/2023 19:02] ladboy233
+Love this codebase.
+
+
+[04/10/2023 19:02] ladboy233
+easy to POC
+
+{Reactions}
+☝️ (5) 😄 
+
+[04/10/2023 19:09] mariodev__
+This is my first one so I can't really compare but I must that just by reading previous reports, this one has a much lower scope so it is easier to get familiar with it right?
+
+
+[04/10/2023 19:10] mariodev__
+Still a newcomer so couldn't submit anything yet XD
+
+
+[04/10/2023 19:22] adriro
+@out.eth dmed you
+
+{Reactions}
+👍 
+
+[04/10/2023 21:10] ladboy233
+lol. I found a bug, I thought it was high, then I POC for an hour and it is a medium
+
+
+[04/10/2023 21:10] ladboy233
+lolllllll
+
+
+[04/10/2023 21:11] chrisapostolov
+same here..
+
+
+[04/10/2023 21:13] codingnamekiki
+:pepemcdonalds:
+
+
+[04/10/2023 23:13] sovaslava9
+Why in buy() I can choose: pay royalty or not? Usually, it depends from settings of pool/router..
+
+
+[04/10/2023 23:55] minh___
+public pools allow the user to choose, private pools dont (owner decides)
+
+{Reactions}
+👍 (2) 
+
+[04/11/2023 00:15] out.eth
+Yep, this^
+
+
+[04/11/2023 08:08] _0xfanz
+Hi @out.eth virtualBaseTokenReserves & virtualNftReserves will be arbitrary initial, right ?
+
+
+[04/11/2023 08:27] t.nero
+The weighting and Merkle tree blew my mind. It's not simple as my first thought, lol.
+
+
+[04/11/2023 08:27] t.nero
+https://discord.com/channels/810916927919620096/1093579563424030832/1094571562876801125
+
+This may help
+
+
+[04/11/2023 08:55] kartoonjoy
+Pinned a message.
+
+
+[04/11/2023 09:12] mahdirostami
+Hello 
+why is there nft in EthRouter.buy() ,but there isn't in PrivatePool.buy()?
+
+{Reactions}
+PU_pepeThinkBaguette 
+
+[04/11/2023 09:20] codingnamekiki
+In order to buy from a particular private pool, the user needs to input the nft address of the collection in EthRouter. While in the private pool, the nft address is hardcoded, when the pool is initialized. So there is no need to input the nft address, when calling the function buy there.
+
+
+[04/11/2023 09:23] mahdirostami
+Thanks
+
+{Reactions}
+pepemexican 
+
+[04/11/2023 10:11] eme0242
+lucky guy😂
+
+
+[04/11/2023 10:19] mahdirostami
+If we find a high or medium bug, but we don't know how to fix the bug, what should we do?
+
+
+[04/11/2023 10:23] chrisapostolov
+If you proved that there is an issue with you PoC there should be no problem with the judges honoring your finding
+
+{Reactions}
+👍 
+
+[04/11/2023 10:50] chaduke3730
+Can anybody explain the notion of nft weight here?
+
+
+[04/11/2023 11:25] dishwasher84
+As far as I understand it, it is used to customize prices for different nfts in a specific collection. 
+It is set by the owner of the pool and then everyone buying and selling nfts needs to adhere to this price (i.e. the nft weight).
+
+
+[04/11/2023 11:38] dishwasher84
+Is the changeFee also given in basis points? So for example 200 for 2%?
+
+
+[04/11/2023 11:41] chrisapostolov
+Yep, it is in basis points
+
+
+[04/11/2023 12:44] 0xdanielh
+@out.eth DMed you!
+
+
+[04/11/2023 12:59] chaduke3730
+@DishWasherthanks, that makes sense
+
+
+[04/11/2023 13:00] chaduke3730
+I wonder why the deposit() does not keep track of who deposits it.
+
+
+[04/11/2023 14:04] patricksfeir
+
+
+{Attachments}
+Code4rena - ARCHIVE-Q2-2023 - caviar-apr07 [1093579563424030832].txt_Files/Screenshot_389-4DD12.png
+
+
+[04/11/2023 14:04] patricksfeir
+help please
+
+
+[04/11/2023 14:21] elku.cryptos
+Use WSL, if you arent already..
+
+
+[04/11/2023 14:38] 0xjmaria
+I have a protocol question. Why would someone deposit NFT and ETH on a private pool?
+
+
+[04/11/2023 14:45] csjaybit
+to earn rent on NFT or earn yield on ETH
+
+
+[04/11/2023 14:54] patricksfeir
+used Git bash, didn't work
+
+
+[04/11/2023 15:19] eme0242
+There is no right to claim any yield
+
+
+[04/11/2023 15:19] bean.eth2
+second
+
+
+[04/11/2023 15:55] nobody2018
+
+
+{Attachments}
+Code4rena - ARCHIVE-Q2-2023 - caviar-apr07 [1093579563424030832].txt_Files/2-CDBFC.png
+
+{Reactions}
+thankyou 
+
+[04/11/2023 16:01] 0xjmaria
+oh okey, thanks!
+
+
+[04/11/2023 16:17] bitspinner
+Fascinating, thanks for sharing!
+
+
+[04/11/2023 18:15] 0xnirlin
+Wrong channel ser
+
+
+[04/11/2023 18:19] yarpo#1601
+opps 🙂
+
+
+[04/11/2023 19:45] excalibor
+Hello, If I find a gas optimization, that is apparent in many different places can I just comment about one of them in my gas report or should I mention every singel application, the optimization is pretty much the same for all instances?
+
+
+[04/11/2023 20:23] escrow1337
+@out.eth sent fr
+
+
+[04/11/2023 21:43] acegawd
+DM @out.eth
+
+
+[04/11/2023 21:54] 0xjmaria
+hey guys, how can a user know which merkle proof use for buying, selling, changing functions???
+
+
+[04/11/2023 22:38] sovaslava9
+I think this project dont have high issues) may be I mistake?
+
+
+[04/11/2023 22:54] minh___
+https://tenor.com/view/we-dont-talk-about-such-things-joey-gladstone-dave-coulier-fuller-house-we-dont-mention-that-gif-17868280
+
+{Embed}
+https://tenor.com/view/we-dont-talk-about-such-things-joey-gladstone-dave-coulier-fuller-house-we-dont-mention-that-gif-17868280
+Code4rena - ARCHIVE-Q2-2023 - caviar-apr07 [1093579563424030832].txt_Files/we-dont-talk-about-such-things-joey-gladst-1A7B1.png
+
+
+[04/11/2023 23:04] out.eth
+yes, a user can set the initial reserves to whatever they want. and they can then also update the reserves to whatever they want afterwards too.
+
+
+[04/11/2023 23:07] out.eth
+Sure, suppose you have Milady #1, #2, and #3.
+
+Miladies #1 and #2 are floor Miladies. They have a weight of 1.0.
+Milady #3 is a rarer NFT and is 3.5x more valuable than the floor NFTs. It has a weight of 3.5.
+
+So the pool then treats Milady #3 as 3.5x more valuable than #1 and #2.
+
+
+[04/11/2023 23:09] chaduke3730
+@out.eththerefore, the weight has to be more than 1.0 (or equal) right?
+
+
+[04/11/2023 23:13] out.eth
+No, changeFee is to 4 decimals of precision. Basis points are to 2 decimals of precision
+changeFee (to 4 decimals of precision and fixed value) -> 200 = 0.0200 ETH
+feeRate (in basis points and a percentage value) -> 200 = 2.00%
+
+
+[04/11/2023 23:14] out.eth
+Not necessarily, but we recommend that you normalise to a floor weight of 1e18
+
+
+[04/11/2023 23:15] chaduke3730
+@out.ethGot it.
+
+
+[04/11/2023 23:15] chaduke3730
+Thanks
+
+
+[04/11/2023 23:16] out.eth
+They will need access to a json file of all the token ids and their weights
+
+
+[04/11/2023 23:18] aba1842
+could you please go a bit into detail here? for the xy=k invariant, X is `virtualBaseTokenReserves`, Y is `virtualNftReserves` and the K is just the result of the multiplication. Also, when quotes for buy/selling are calculated, they try to keep the new x'*y' to still be equal to k?
+
+
+[04/11/2023 23:19] out.eth
+It reduces the technical barrier to entry for liquidity provisioning. Users can deposit NFTs and ETH and their liquidity will always be present in the market. For doing this, they receive yield in the form of fees each time somebody trades.
+
+
+[04/11/2023 23:20] out.eth
+yes that's exactly right
+
+
+[04/11/2023 23:22] aba1842
+I see, thank you. One more question, any particular reason why for `sellQuote` it is round down (default Solidity) and for `buyQuote` it is round up (mulDivUp)?
+
+
+[04/11/2023 23:29] out.eth
+the output amount should always favour the pool to avoid funds from being drained.
+e.g. a user should always send slightly more than what the quote is, and should receive slightly less than what the output is.
+
+
+[04/11/2023 23:31] aba1842
+alright, I get the logic. Thanks again, nothing more from me at this point 😄
+
+
+[04/12/2023 00:13] adriro
+@out.eth what chains are you planning to support? sorry if this was already mentioned
+
+
+[04/12/2023 05:57] akshaysrivastav
+Does the protocol intends to use ERC777 tokens as `baseToken`?
+
+@out.eth
+
+
+[04/12/2023 05:59] akshaysrivastav
+or any other kind of non-standard ERC20s?
+
+
+[04/12/2023 06:06] chaduke3730
+@out.ethwhy does the deposit() function not keep track of the depositor info? How can each depositor withdraw his own nft/eth back?
+
+
+[04/12/2023 06:40] nobody2018
+You can take a look at the screenshot I sent yesterday
+
+
+[04/12/2023 07:08] t.nero
+I have a question about that too. If  depositors have nothing in return, can't even withdraw their deposited, then why would someone want do call it anyway? Is there any reasonable example/use-case of it?
+
+
+[04/12/2023 07:18] codingnamekiki
+And the answer is quite simple as well, no one will call it except someone related to the pool owner or the owner himself.
+
+
+[04/12/2023 07:21] chaduke3730
+@nobody2018 i did but still do not understand how to withdraw and get reward
+
+
+[04/12/2023 07:28] nobody2018
+In my opinion, only the owner will call this function
+
+
+[04/12/2023 07:28] t.nero
+Haha, I realized that already. Anyway, I think I understand its intention, permissionless as much as it can (or I'm wrong again 😅 ).
+
+
+[04/12/2023 09:14] jpserrat
+@chaduke if I'm not mistaken, these functions are supposed to be used with other types of contracts. For example, I've created my private pool and on top of that, I build a contract that will keep track of the deposit and generate a yield for that.
+
+
+[04/12/2023 09:25] akshaysrivastav
+still those tracked deposits will be useless as there is no way to redeem them
+
+{Reactions}
+👍 
+
+[04/12/2023 09:52] bearonbike#7864
+@out.eth Could you tell me where can l find royaltyRegistry's implementation?
+
+
+[04/12/2023 13:32] 0xnirlin
+👾
+
+
+[04/12/2023 13:35] evokid
+@out.eth Dmed U
+
+
+[04/12/2023 13:46] m9800
+if it is like that normally what you have is an abstract contract, and then an example of an implementation
+
+
+[04/12/2023 13:46] m9800
+.
+
+
+[04/12/2023 13:56] jpserrat
+I see, thanks for the explanation, I was just speculating
+
+
+[04/12/2023 14:07] mahdirostami
+So If the user buys an nft with weight=1.
+If that nft has a weight of 4 so the user buys it fractionally.
+
+
+[04/12/2023 14:45] 0xjmaria
+Hello, is the implementation of `royaltyInfo(tokenId, salePrice)` known? It does depends on the contract address of `royaltyRegistry`, So depending on `royaltyRegistry` and `lookupAddress` the way of calculating the royaltyFee changes. Am I right on that?
+
+
+[04/12/2023 14:58] aba1842
+I found it at one point. I googled/searched github starting from this comment `The royalty registry from manifold.xyz.` I don't have then any more but you can quickly find them.
+
+
+[04/12/2023 15:00] 0xjmaria
+but this royalty registry address could be changed at any moment, well, is its an immutable variable but from today until the day of deployment
+
+
+[04/12/2023 15:01] aba1842
+yes, but by that logic anything can be changed at any time until the day of deployment with malicious versions, valid for all projects now and in the future. It's not really a productive mindset/way of thinking (or useful)
+
+
+[04/12/2023 15:07] 0xjmaria
+In the cases where lookupAddress is equal to nft, the implementation of royaltyInfo(tokenId, salePrice) could be overriden in the nft contract, and this contract is not known, depends on the pool created by the user, so basically the implementation of `royaltyInfo` could follow the IERC2981 standard or not, am I right on that?
+
+{Attachments}
+Code4rena - ARCHIVE-Q2-2023 - caviar-apr07 [1093579563424030832].txt_Files/Captura_de_Pantalla_2023-04-12_a_las_17.05-E6BC7.png
+
+
+[04/12/2023 15:14] aba1842
+that case is theoretically possible but practically hard, better to make your case and try a submission, it is not me who you would need to justify it to
+
+
+[04/12/2023 15:21] 0xjmaria
+ok ser! i was not sure if this was possible and wanted to hear opinions, thanks for yours 🙂
+
+{Reactions}
+👍 
+
+[04/12/2023 20:12] omprakas
+Guys one small doubt, what those yellow badge indicates?
+
+{Attachments}
+Code4rena - ARCHIVE-Q2-2023 - caviar-apr07 [1093579563424030832].txt_Files/Screenshot_2023-04-13-01-41-24-26-747F1.jpg
+
+
+[04/12/2023 20:25] aba1842
+internally, C4 tracks issues on a private github repo, for judging. On that repo, the tag for medium issues is that yellow tag. When you will see the repo with findings, you will see that your issue started with that tag. So a TL;DR it's normal, it confirms that you submitted a medium finding
+
+
+[04/12/2023 20:28] omprakas
+Thanks, actually the day before yesterday I'm just submitted one issue with the line link but now the line link actually directed to the wrong place is c4 simultaneously modify the issues ?
+
+
+[04/12/2023 23:27] 0xbtk
+@out.eth Sent you a request
+
+
+[04/13/2023 01:06] tamayonft
+I understand that the private pool the owner has a lot power because is private right?
+
+
+[04/13/2023 03:03] dishwasher84
+The virtualBaseTokenReserves are given in base units, so number_of_tokens * 10^decimals.
+And virtualNFTReserves always multiplied by 10^18. Is this correct?
+
+
+[04/13/2023 06:32] out.eth
+No, also rebase and fee-on-transfer tokens aren't supported.
+Some tokens which we intend to support: WETH, USDT, USDC, DAI
+
+{Reactions}
+👍 (2) 
+
+[04/13/2023 06:36] out.eth
+virtualNftReserves can be set to whatever value the user wants but we recommend normalising to a weight of 1e18. That is, 1 floor NFT should have a weight of 1e18.
+
+
+[04/13/2023 06:36] out.eth
+https://royaltyregistry.xyz/lookup
+
+{Embed}
+https://royaltyregistry.xyz/lookup
+royaltyregistry.eth
+Providing Access to On-Chain Royalties
+Code4rena - ARCHIVE-Q2-2023 - caviar-apr07 [1093579563424030832].txt_Files/royalty-registry-card_gz3idi-F1782.jpg
+
+
+[04/13/2023 06:37] 0xjmaria
+Thanks!
+
+
+[04/13/2023 08:37] _oceansky
+Let's call it a day, done with submission only 1 high risk this time. Hope this will count! Goodluck to all!
+
+
+[04/13/2023 14:51] 0xnirlin
+tell me and i will write a good report for you.
+
+
+[04/13/2023 14:52] 0xnirlin
+https://tenor.com/view/bonusly-handshake-deal-gif-22636801
+
+{Embed}
+https://tenor.com/view/bonusly-handshake-deal-gif-22636801
+Code4rena - ARCHIVE-Q2-2023 - caviar-apr07 [1093579563424030832].txt_Files/bonusly-handshake-3647C.png
+
+{Reactions}
+😆 
+
+[04/13/2023 15:00] minh___
+how will you write a good report if you are not even writing "write" right?
+
+{Reactions}
+💀 (7) thisisfine (2) 10_10 (2) 
+
+[04/13/2023 15:06] loserdavictor
+brah, it will haunt him, don't -  i was haunted too🐧 🐧
+
+
+[04/13/2023 15:07] 0xrizwan
+@out.eth , Please check DM.
+
+
+[04/13/2023 15:08] minh___
+I just had to say it, couldnt let that opportunity slip 😄
+
+{Reactions}
+🐧 
+
+[04/13/2023 15:41] 0xnirlin
+holy shit, i am brain dead already writing the rubicon report.
+
+{Reactions}
+🫡 (2) 😄 hi5 
+
+[04/13/2023 15:41] 0xnirlin
+washing my sins with edit button:thisisfine:
+
+{Reactions}
+ohno (3) 😅 
+
+[04/13/2023 19:54] decade8795
+Interesting contest indeed.... Learnt a lot regarding minimal proxy
+
+
+[04/13/2023 19:57] evokid
+I was happy to participate with this clean code base 🌼
+
+
+[04/13/2023 19:58] 0xnirlin
+thank you @dddDD for bearing so many questions in dm. Very responsive and quick
+
+
+[04/13/2023 20:00] tallo#5415
+very good code base
+
+
+[04/13/2023 20:00] tallo#5415
+learned a lot about nft amm's
+
+
+[04/13/2023 20:02] C4
+**🚨 CONTEST ALERT**
+
+@🐺wardens The **Caviar Private Pools** contest is now closed! Huge thanks to everyone who participated 🔍, whether you submitted a finding or not.
+
+What's next: The sponsor team and judge will review the findings over the next couple of weeks. Keep an eye on #📢announcements for regular updates on how the contest is progressing through awarding 🤑🏆, judging 🧑‍⚖️ and reporting 📜. Feel free to ping a Contest Admin if you have questions along the way!
+
+{Reactions}
+🔥 (17) 🚀 (8) 🫡 (8) 🤝 
+
+[04/13/2023 20:03] hunter_w3b
+Thanks 👍:chefskiss:
+
+
+[04/13/2023 20:03] 0xhacksmithh
+Bad luck, Just need a sec to paste link on my high vul find
+
+
+[04/13/2023 20:03] 0xrobocop
+Interesting concept, thanks to the Caviar Team.
+
+
+[04/13/2023 20:03] kiki_dev
+Thanks @out.eth  fun code base to work through!
+
+
+[04/13/2023 20:03] minh___
+wrong contest, go sleep
+
+{Reactions}
+😂 (9) 
+
+[04/13/2023 20:04] 0xnirlin
+press F
+
+
+[04/13/2023 20:05] 0xjuancito
+Nice codebase. Pretty much fun to review it 👌
+
+
+[04/13/2023 20:06] chaindev
+how can I know who are selected for Mitigation review contest?
+@out.eth
+
+
+[04/13/2023 20:06] 0xjuancito
+Wait for the results
+
+
+[04/13/2023 20:06] codingnamekiki
+top 3 wardens on the results as well
+
+{Reactions}
+👆 
+
+[04/13/2023 20:07] chaindev
+oh, I thought that the Mitigation starts right now
+my misunderstanding
+
+
+[04/13/2023 20:51] alexxander
+Very nice contest 🚀
+
+
+[04/13/2023 21:11] toonvh
+Thanks to the Caviar team! Enjoyed this codebase! :10_10:
+
+
+[04/14/2023 00:25] out.eth
+Thanks for participating guys, glad to hear lots of you had fun reviewing the code!
+
+{Reactions}
+10_10 (10) 
+
+[04/14/2023 03:37] 0xrobocop
+Yeah, nice codebase
+
+
+[04/14/2023 04:22] coffiasd
+chilll
+
+
+[04/14/2023 18:16] avik_saikat
+when can we expect the results ?
+
+
+[04/14/2023 18:17] alexxander
+https://tenor.com/view/first-time-meme-first-time-the-ballad-of-buster-scruggs-gif-24656975
+
+{Embed}
+https://tenor.com/view/first-time-meme-first-time-the-ballad-of-buster-scruggs-gif-24656975
+Code4rena - ARCHIVE-Q2-2023 - caviar-apr07 [1093579563424030832].txt_Files/first-time-meme-first-time-0A324.png
+
+{Reactions}
+✅ (24) 
+
+[04/14/2023 18:17] alexxander
+Mandatory
+
+
+[04/15/2023 23:45] kemkemcrypt
+I can't wait
+
+
+[04/15/2023 23:45] kemkemcrypt
+Good evening guys
+
+
+[04/24/2023 05:50] 0xepley
+https://tenor.com/view/first-firsttimer-timer-big-daddy-gif-13153854
+
+{Embed}
+https://tenor.com/view/first-firsttimer-timer-big-daddy-gif-13153854
+Code4rena - ARCHIVE-Q2-2023 - caviar-apr07 [1093579563424030832].txt_Files/first-firsttimer-D2399.png
+
+
+[04/24/2023 07:14] t.nero
+2 weeks on average. Edit: according to 18th April update, the contest had not yet started judging. Maybe it is now, so I think we should wait for this week announcement for the progress update.
+
+
+[05/05/2023 10:47] alextheentreprenerd
+:praisethesun:
+
+{Reactions}
+🙏 🐧 
+
+[05/05/2023 11:13] ladboy233
+send it！
+
+{Reactions}
+cheers_badger (5) 
+
+[05/05/2023 13:15] kiki_dev
+First time being back stage And seeing all the work you guys put in is unreal. I’ll never complain about slow turn around time again lol
+
+{Reactions}
+cheers_badger (3) 🐧 hi5 (3) 👆 (2) 
+
+[05/05/2023 13:57] cloudellie
+Would encourage you to re-post this in #🙌high-fives - I'm sure many community members would appreciate reading it!
+
+{Reactions}
+✅ (3) 
+
+[05/05/2023 17:08] itsmetechjay
+:code4rena: 💸 🎉 Awards for **Caviar Private Pools**:
+
+$2,784.31 USDC » @rbserver 
+$2,597.39 USDC » @Ruhum 
+$2,509.31 USDC » @rvierdiiev 
+$2,445.61 USDC » @KrisApostolov 
+$1,520.15 USDC » @Haipls 
+$1,355.38 USDC » Voyvoda (@alexxander, @deadrosesxyz, @gogo)
+$1,283.90 USDC » @AkshaySrivastav 
+$1,235.92 USDC » @0xladboy | Sparkware 
+$1,107.77 USDC » @hihen 
+$846.91 USDC » @teddav 
+$843.78 USDC » @tanh.eth 
+$664.13 USDC » @Brenzee 
+$624.02 USDC » @JCN 
+$590.02 USDC » @chaduke 
+$564.02 USDC » @ulqiorra 
+$537.26 USDC » @Rolezn 
+$506.27 USDC » @0xSmartContract 
+$480.02 USDC » @hunter_w3b 
+$450.78 USDC » @adriro 
+$433.41 USDC » @aviggiano 
+$321.04 USDC » @btk 
+$308.82 USDC » @dingo2077 
+$303.94 USDC » @0x5rings 
+$297.96 USDC » @ABA 
+$236.89 USDC » @saian 
+$224.87 USDC » @Kenshin 
+$202.64 USDC » 0xLanterns (@kiki, @wall604)
+$201.56 USDC » @anon 
+$192.56 USDC » @jpserrat 
+$185.58 USDC » @Koolex 
+$184.53 USDC » @peanuts 
+$172.49 USDC » @0xRobocop 
+$165.13 USDC » @sashik_eth 
+$153.54 USDC » @giovannidisiena 
+$126.12 USDC » @shaka 
+$122.07 USDC » @Sathish9098 
+$122.07 USDC » @matrix_0wl 
+$120.99 USDC » @RaymondFam 
+$112.96 USDC » @Kiki 
+$112.10 USDC » @bauer6009 
+$112.10 USDC » @SovaSlava 
+$110.04 USDC » @minhtrng 
+$100.54 USDC » @Philogy 
+$99.40 USDC » @JGcarv
+$98.99 USDC » @ReyAdmirado 
+$93.66 USDC » @bin2chen 
+$91.53 USDC » GT_Blockchain (@0xTraub, @0xTinder, @0x6020c0, @zion, @xkycc )
+$89.68 USDC » @teawaterwire 
+$89.68 USDC » @evokid 
+$81.97 USDC » @J4de 
+$81.97 USDC » @DishWasher 
+$81.09 USDC » @ElKu 
+$80.67 USDC » @Josiah 
+$72.64 USDC » @neumo 
+$57.76 USDC » @nemveer 
+$50.06 USDC » @bshramin 
+$46.72 USDC » @cryptonue 
+$42.54 USDC » @0xjmaria 
+$40.74 USDC » @tallo 
+$40.32 USDC » @DadeKuma 
+$40.32 USDC » @savi0ur 
+$40.03 USDC » @Bitspinner
+
+{Reactions}
+🙌 (4) 🥳 (5) 👍 (3) 
+
+[05/05/2023 17:08] itsmetechjay
+$37.62 USDC » @0xTheC0der 
+$37.62 USDC » @said 
+$36.98 USDC » @0xbepresent 
+$34.04 USDC » @Rappie 
+$34.04 USDC » @ChrisTina 
+$34.04 USDC » @0xpiken 
+$34.04 USDC » @ych18 
+$31.00 USDC » @p0wd3r 
+$31.00 USDC » @BenRai 
+$31.00 USDC » @Bauchibred 
+$26.76 USDC » @Emmanuel 
+$26.76 USDC » @nobody2018 
+$26.76 USDC » @sces60107 | GimelSec 
+$26.76 USDC » @Noro 
+$26.76 USDC » @oxen 
+$26.76 USDC » @Norah 
+$26.76 USDC » @decade 
+$26.16 USDC » @yixxas 
+$26.07 USDC » @ayden 
+$23.08 USDC » @Cryptor 
+$23.08 USDC » @tsvetanovv 
+$23.08 USDC » @0xSurena 
+$23.08 USDC » @0xcatellatech 
+$23.08 USDC » @0xAgro 
+$23.08 USDC » @tnevler 
+$23.08 USDC » @0x6980 
+$23.08 USDC » @lukris02 
+$23.08 USDC » @georgits 
+$23.08 USDC » @MaanVad3r 
+$23.08 USDC » @Kaysoft 
+$23.08 USDC » @codeslide 
+$20.18 USDC » @Dug
+$15.31 USDC » @T1MOH 
+$14.01 USDC » @ToonVH 
+$14.01 USDC » @anodaram 
+$10.86 USDC » @zion 
+$10.86 USDC » @juancito 
+$10.86 USDC » @hasmama 
+$10.86 USDC » @holyhansss_kr 
+$10.86 USDC » @carlitox477 
+$10.86 USDC » @fs0c 
+$9.33 USDC » @Nyx 
+$9.33 USDC » @MiloTruck 
+$9.33 USDC » @Tedo 
+$8.51 USDC » @BradMoon 
+$8.03 USDC » @climber2002 
+$8.03 USDC » @SpicyMeatball 
+$8.03 USDC » @0xNorman 
+$8.03 USDC » @evilakela 
+$8.03 USDC » @code-cipher 
+$5.98 USDC » Naubit
+$5.98 USDC » @indijanc 
+$5.98 USDC » @0xWeiss 
+$5.98 USDC » @ck 
+$5.98 USDC » @joestakey 
+$5.77 USDC » @sayan 
+$5.77 USDC » @Madalad 
+$4.66 USDC » @abiih
+
+🏁 Findings summary
+---------------------------
+High risk findings: 52 total, 3 unique
+Med risk findings: 163 total, 17 unique
+Gas reports: 6 
+QA reports: 25 
+
+Awards will be distributed on Polygon within the next week. Congratulations, everyone! 💸 💸 💸
+
+*Note: If you participated in this contest and don’t see your name on this list, please wait until the report is published and the findings repo is made public to check on your submissions.*
+
+{Reactions}
+hi5 (8) 🤝 (5) 😭 (6) ☝️ (3) 🎉 (2) 
+
+[05/05/2023 17:13] ladboy233
+。。。
+
+
+[05/05/2023 17:14] chrisapostolov
+well being underage prevents me from participating in the mitigation
+
+{Reactions}
+👀 (4) 🤣 (7) 
+
+[05/05/2023 17:23] sp1cymeatball
+H 3 M 17
+Woah, and I thought codebase was clean
+
+
+[05/05/2023 17:23] tallo#5415
+yeah really
+
+
+[05/05/2023 17:24] tallo#5415
+always astounded by what people find
+
+
+[05/05/2023 17:35] 0x4non
+ngmi, i got a good performance, but i think i will make more money playing axi infinity than auditing 😭
+
+{Reactions}
+😂 (20) 🇫 (4) 
+
+[05/05/2023 17:53] 0xepley
+i'm pretty sure that i found valid mediums not sure why not in the list
+
+
+[05/05/2023 17:57] sathish9098kumar
+My first high 😊😊
+
+{Reactions}
+🔥 (8) 
+
+[05/05/2023 18:11] alexxander
+We found 2/3 highs and bunch of meds 😳 Congratulations everyone 🙌🙌
+
+{Reactions}
+🔥 (7) 🫡 (3) 
+
+[05/05/2023 18:17] deadrosesxyz
+we gotta do 3/3 next time 👀
+
+
+[05/05/2023 18:22] acai_sec
+Me too. Why?!
+
+
+[05/05/2023 18:23] aba1842
+when the report is made public you will get to see exactly why there were invalidated, just patience and continue growing
+
+{Reactions}
+thankyou (3) 
+
+[05/05/2023 18:24] shubh0412
+When a couple of Gas/QA couldn't even make you enter the list 💔
+
+
+[05/05/2023 18:28] acai_sec
+I submitted several questions, but my name was not listed. 😓 ？
+
+
+[05/05/2023 18:31] hunter_w3b
+Congratulations 🎉
+
+{Reactions}
+👍 (2) 
+
+[05/05/2023 18:32] raihan3727
+I submitted several Gas Issue, but my name was not listed?🧐
+
+{Reactions}
+😆 (3) 😕 
+
+[05/05/2023 18:53] ihtishamsudo
+Us but don’t worry we’ll get it someday 🤝
+
+
+[05/05/2023 19:45] sockdrawermoney
+We’re working on it 🙂
+
+{Reactions}
+❤️ 
+
+[05/05/2023 19:56] chaindev
+to: @out.eth 
+cc: judges
+I want to ask about this known issues. I think they are not related with Caviar project, are they?
+
+
+[05/05/2023 19:57] chaindev
+
+
+{Attachments}
+Code4rena - ARCHIVE-Q2-2023 - caviar-apr07 [1093579563424030832].txt_Files/image-6E9F6.png
+
+
+[05/05/2023 20:54] benrai
+When can we expect the report to be published?
+
+
+[05/05/2023 20:57] benrai
+Or is there a way to see the issues upfront somewhere?
+
+
+[05/06/2023 00:08] chaduke3730
+Congrats to all!
+
+{Reactions}
+🫡 (4) 
+
+[05/06/2023 01:40] out.eth
+they are separate to caviar, yes
+
+
+[05/06/2023 09:22] petrichor0961
+Yohooo
+🥳🥳🥳🥳
+
+{Reactions}
+🫡 
+
+[05/06/2023 16:02] aba1842
+The only way to see your findings before they are published is by having the backstage role. Read more about it on the C4 docs site. Other than that, only when the report is out. The report takes between 2 to 3 months, from experience, to come out, after the contest was completed
+
+
+[05/06/2023 16:28] petrichor0961
+Me and my friends couldn't find our name  in the list 🤐
+But no problem it was our first report we are waiting for another 4 report 🤠puf
+
+{Reactions}
+4739_Skeletor (2) 🫰 (2) 
+
+[05/06/2023 17:21] benrai
+Thanks for the info! 😊
+
+{Reactions}
+👍 
+
+[05/07/2023 07:58] t.nero
+I'm not sure what kind of issue you have submitted, but if the judge or pre-sort(er) categorized your submission as grade-c or unsatisfactory, that submission will not be eligible for reward. This could be a reason why your name doesn't on the list, too. I presume you may don't know this yet, very sorry if you did already.
+
+
+[05/07/2023 10:01] petrichor0961
+Was gas issue 
+😐
+
+
+[05/07/2023 10:11] t.nero
+Worth reading here: https://docs.code4rena.com/awarding/incentive-model-and-awards#qa-and-gas-optimization-reports
+
+```
+There is a very high burden of quality and value provided for QA and gas optimization reports. Only submissions that demonstrate full effort worthy of consideration for inclusion in the report will be eligible for rewards.
+
+It is highly recommended to clearly spell out the impact of proposed gas optimizations.
+```
+
+TLDR; submitting QA and Gas report are like submitting a separate full-report, it technically requires more than just describing what you found. You are implicitly expected to provide summary of all findings, gas comparison table, for instances. You can take a look at prior reports for references.
+
+{Embed}
+https://docs.code4rena.com/awarding/incentive-model-and-awards
+Incentive model and awards
+
+{Reactions}
+thankyou (2) 🌷 👍 
+
+[05/07/2023 11:08] petrichor0961
+Thank u
+
+
+[05/07/2023 16:49] mgf15
+not on the list 😭
+
+{Reactions}
+🫂 (2) 
+
+[05/08/2023 06:15] eme0242
+What happens when one's report is low quality?
+
+
+[05/08/2023 06:46] chrisapostolov
+they add unsatisfactory and the report gets invalidated
+
+{Reactions}
+👍 
+
+[05/08/2023 07:34] t1moh
+Judges can give 50% partial credit for issue
+
+{Reactions}
+👍 
+
+[05/08/2023 07:59] 0xnirlin
+can you explain a bit , i did two contests on code4rena and didn;t know about this thing
+
+
+[05/08/2023 09:11] t1moh
+I also don't know, just saw 50% on my submission in backstage because report is valid but low quality
+
+
+[05/08/2023 09:17] 0xnirlin
+Check dm plz
+
+
+[05/08/2023 12:20] cloudellie
+Please see the docs: https://docs.code4rena.com/awarding/incentive-model-and-awards#duplicates-getting-partial-credit
+
+{Embed}
+https://docs.code4rena.com/awarding/incentive-model-and-awards
+Incentive model and awards
+
+
+[05/08/2023 20:08] eme0242
+What happens when there are no valid highs or mediums?
+
+
+[05/08/2023 20:15] 0xbtk
+https://docs.code4rena.com/awarding/incentive-model-and-awards/curve-logic#what-if-there-are-no-high-or-medium-severity-findings
+
+{Embed}
+https://docs.code4rena.com/awarding/incentive-model-and-awards/curve-logic
+Curve logic for QA and Gas optimization reports
+
+
+[05/09/2023 08:46] dicethedev
+Congratulations man
+
+
+[05/11/2023 18:54] Hama#9496
+i just got into reporting medium bugs, i sent 2 reports in caviar contest but they were not accepted, anyone please can review my reports and help me understand what went wrong?
+
+
+[05/11/2023 19:00] sockdrawermoney
+For starters, one piece of feedback is to only post things in one place
+
+
+[05/11/2023 19:01] sockdrawermoney
+Otherwise it can come across as impatience and it’s hard for people to want to give advice to someone they perceive as impatient
+
+
+[05/11/2023 19:02] sockdrawermoney
+I think the #🏫education channel is a very good place to ask (as was one of the places you did). 
+
+Just know that you’re asking for other people to do work to help you out, so you may need to wait for that. Also consider that none of us are entitled to anyone’s free time so you may need to make it easier for someone to help you by framing your question more specifically.
+
+
+[05/11/2023 19:06] Hama#9496
+well i apologize i didnt mean it to be bothering i just thought about having ideas from people from whatever tag they may be on especially these related ones, caviar, education and chat
+
+
+[05/11/2023 19:16] sockdrawermoney
+Not bothering 🙂 I’m just trying to help you get what you’re looking for
+
+{Reactions}
+❤️ 
+
+[05/19/2023 04:51] dishwasher84
+By now, the money should be transferred via Polygon right?
+Because I am not seeing it on my account. 
+Might be a mistake on my part as this was my first audit.
+Can anyone help?
+
+
+[05/19/2023 04:54] angry_mustache_man
+I think u need to add USDC to Polygon Mainnet in metamask. Use this video for the same. 
+https://www.youtube.com/watch?v=ObMav5ZojPg
+
+{Embed}
+mmo tv
+https://www.youtube.com/watch?v=ObMav5ZojPg
+How To add USDC To Polygon Mainnet On MetaMask Wallet - mmo tv
+Welcome back to mmo tv! Today I am showing How to add USDC to Polygon Mainnet on Metamask wallet.
+1. Go to coinmarketcap
+2. Search for USDC and click on it
+3. Click see more to see USDC for Polygon
+4. Click add it to Metamask
+5. Check it if contract ID is correct
+6. Done!
+Note: If you want to know how to create Metamask wallet account and how to...
+Code4rena - ARCHIVE-Q2-2023 - caviar-apr07 [1093579563424030832].txt_Files/maxresdefault-1B676.jpg
+
+
+[05/19/2023 04:57] dishwasher84
+Thank you!
+
+
+[05/19/2023 05:11] dishwasher84
+Where can I find the feedback for my submitted findings?
+I see that there is a general report and how many of my H,M, ... findings were accepted but I dont see which ones and also not why the others were rejected.
+
+
+[05/21/2023 15:07] ihtishamsudo
+Same question
+
+
+[05/22/2023 06:26] ihtishamsudo
+When u submit some gas findings and it considered valid in Final report but you didn’t get your name on list.
+
+{Attachments}
+Code4rena - ARCHIVE-Q2-2023 - caviar-apr07 [1093579563424030832].txt_Files/IMG_0691-0A4AB.png
+
+
+[05/22/2023 08:43] sockdrawermoney
+That’s not how gas optimization reports work. Your report as a whole is judged. Only the best report makes it into the final report.
+
+{Reactions}
+👍 
+
+[05/22/2023 13:11] hunter_w3b
+Can I dm you?
+
+
+[05/22/2023 20:31] chaindev
+Hi, @Alex The Entreprenerd 
+https://github.com/code-423n4/2023-04-caviar-findings/issues/514
+In my report, you commented with `the report doesn't "twist the knife"`
+What does that mean?
+
+{Reactions}
+🔪 
+
+[05/23/2023 07:18] alextheentreprenerd
+Other reports have shown how this can be chained to steal funds, this one did not.
+
+I recommend coding a POC next time and fully exploring the implications
+
+
+[05/23/2023 09:55] chaindev
+As you know, it is too common issue in solidity.
+I thought it doesn't require PoC code since it is too clear.
+Thanks for your response anyway. Forgot it. 👍
+
+
+[05/23/2023 16:13] alextheentreprenerd
+We plan on doing office hours for this contest, next week, feel free to ask your question here, or if you want to participate live, reach out to either me or @🧚aramas | C4
+
+{Reactions}
+hi5 (4) 
+
+[05/26/2023 13:40] jgcarv
+@Alex The Entreprenerd Where can I actually see the details of how my findings were judged?
+
+
+[05/26/2023 14:12] alextheentreprenerd
+Will show in OH
+
+
+[05/26/2023 14:20] alextheentreprenerd
+If wardens have more questions, drop them here and we'll answer during OH, we need to have Faqs because it's impossible to answer the same question 20 times a week
+
+{Reactions}
+💜 (2) 😂 
+
+[05/26/2023 18:10] jgcarv
+Sorry, I don't understand. 
+> In my report, you commented with the report doesn't "twist the knife"
+How can @anodaram know that if specifics of each reported findings  will only be shown in OH?
+
+
+[05/26/2023 18:32] alextheentreprenerd
+Office Hours is recorded for all to benefit
+
+
+[05/26/2023 18:39] alextheentreprenerd
+If you click on any headers in the report https://code4rena.com/reports/2023-04-caviar#h-01-royalty-receiver-can-drain-a-private-pool
+It sends you on github, from there you can search your reports and see the feedback
+
+{Embed}
+https://code4rena.com/reports/2023-04-caviar
+Code4rena
+Code4rena is a competitive audit platform that finds more high-severity vulnerabilities, more quickly than any other auditing method.
+Code4rena - ARCHIVE-Q2-2023 - caviar-apr07 [1093579563424030832].txt_Files/c4-og-banner-3E5BC.png
+
+{Reactions}
+👍 
+
+[05/26/2023 18:42] sockdrawermoney
+
+
+{Attachments}
+Code4rena - ARCHIVE-Q2-2023 - caviar-apr07 [1093579563424030832].txt_Files/5FDCCA1B-8258-4F07-A8B7-F0700689E3F6-9C4DA.jpg
+
+{Reactions}
+💯 (2) praisethesun (2) chefskiss (3) hearteyesshark C4Keycap (2) 
+
+[05/26/2023 20:54] tallo#5415
+
+
+{Attachments}
+Code4rena - ARCHIVE-Q2-2023 - caviar-apr07 [1093579563424030832].txt_Files/image-88073.png
+
+{Reactions}
+👀 
+
+[05/26/2023 20:54] tallo#5415
+anyone else get an L on your report?
+
+
+[05/27/2023 12:36] 0xhadexploit
+Hi, @Alex The Entreprenerd  my question is related to https://github.com/code-423n4/2023-04-caviar-findings/issues/913. It's marked as insufficient proof. What should I do in this case?
+
+{Embed}
+https://github.com/code-423n4/2023-04-caviar-findings/issues/913.
+Issues · code-423n4/2023-04-caviar-findings
+Contribute to code-423n4/2023-04-caviar-findings development by creating an account on GitHub.
+Code4rena - ARCHIVE-Q2-2023 - caviar-apr07 [1093579563424030832].txt_Files/81f460eb-cf85-400e-80ea-b7cc2423b27b-53CC1
+
+{Reactions}
+👌 
+
+[05/30/2023 12:30] alextheentreprenerd
+https://discord.com/events/810916927919620096/1112810690445578421
+
+{Reactions}
+chefskiss (4) 
+
+[05/31/2023 18:24] alextheentreprenerd
+If you have a specific question / topic you'd like me to cover, drop your question here and we'll address it tomorrow
+
+
+[06/05/2023 16:09] alextheentreprenerd
+https://www.youtube.com/watch?v=nady250cNo4
+
+{Embed}
+Code4rena
+https://www.youtube.com/watch?v=nady250cNo4
+Office Hours #4 | What makes a high-severity finding
+Thanks to Alex the Entreprenerd (https://twitter.com/GalloDaSballo/) for this initiative!
+
+Code4rena is a competitive audit platform that finds more high-severity vulnerabilities, more quickly than any other auditing method. Built by a team of leading industry experts, Code4rena is designed to protect your project and community by providing acce...
+Code4rena - ARCHIVE-Q2-2023 - caviar-apr07 [1093579563424030832].txt_Files/maxresdefault-0B3EF.jpg
+
+{Reactions}
+🫡 (3) ☕ gummy_bear 
+
+[06/08/2023 01:53] bytes032
+full of alpha, highly recommended
+
+{Reactions}
+hi5 (6) gummy_bear (3) 
+
+[08/22/2023 05:16] mangoeth
+@Alex The Entreprenerd 
+Hi, my question was regarding this vulnerability:
+https://code4rena.com/reports/2023-04-caviar#m-15-pool-tokens-can-be-stolen-via-privatepoolflashloan-function-from-previous-owner
+
+I didnt quite understand why the flashLoan function was vulnerable here. Once a malicious actor exploits the "execute" function, he gives allowance to spend the erc20's & 721's to a smart contract. After he sells the nft which owns the proxy contract of said pool & finally just steal all nfts + tokens. The report repeats "flashLoan" quite a lot, but wouldnt just a function like this suffice to drain the pool once the malicious actor gave it allowance? What am i missing?
+
+{Attachments}
+Code4rena - ARCHIVE-Q2-2023 - caviar-apr07 [1093579563424030832].txt_Files/image-4DB01.png
+
+{Embed}
+https://code4rena.com/reports/2023-04-caviar
+Code4rena
+Code4rena is a competitive audit platform that finds more high-severity vulnerabilities, more quickly than any other auditing method.
+Code4rena - ARCHIVE-Q2-2023 - caviar-apr07 [1093579563424030832].txt_Files/c4-og-banner-767F3.png
+
+
+[08/22/2023 15:31] alextheentreprenerd
+This finding was somewhat controversial but fundamentally it boils down to the idea that:
+- You can sell the Pool as an NFT
+- If you sell the Pool you can empty it since you can setup approvals of tokens in the pool and then sweep them away
+
+Ultimately it means that the Pool could not be sold as an NFT, similarly to UniV3 Positions
+
+
+[08/22/2023 16:20] mangoeth
+Thank you very much for clarifying!
+
+{Reactions}
+chefskiss 
+
+==============================================================
+Exported 302 message(s)
+==============================================================
